@@ -22,9 +22,11 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-dark-subtle">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-sm navbar-light shadow-sm">
+      <div class="container-fluid mx-5">
+        <a class="navbar-brand fw-bold badge bg-warning fs-5" href="#"
+          >MySchool</a
+        >
         <button
           class="navbar-toggler d-lg-none"
           type="button"
@@ -44,10 +46,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link" href="#">Facilities</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Project</a>
+              <a class="nav-link" href="#">Price</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -57,27 +59,214 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="p-5 bg-light rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4">
-          Using a series of utilities, you can create this jumbotron, just like
-          the one in previous versions of Bootstrap. Check out the examples
-          below for how you can remix and restyle it to your liking.
-        </p>
-        <button class="btn btn-primary btn-lg" type="button">
-          Example button
-        </button>
-      </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#ffd700"
-        fill-opacity="1"
-        d="M0,128L30,138.7C60,149,120,171,180,186.7C240,203,300,213,360,202.7C420,192,480,160,540,160C600,160,660,192,720,213.3C780,235,840,245,900,218.7C960,192,1020,128,1080,90.7C1140,53,1200,43,1260,53.3C1320,64,1380,96,1410,112L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-      ></path>
-    </svg>
+    <!-- Main -->
+    <main>
+      <!-- Hero Section -->
+      <section>
+        <div class="p-5 row">
+          <div class="container-fluid py-5 col-sm-6 align-self-center">
+            <h1 class="display-5 fw-bold">The Best School for your Kid's</h1>
+            <p class="col-md-8 fs-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis hic veniam magni voluptatum autem harum eos voluptas
+              dolorum, sed debitis.
+            </p>
+          </div>
+          <div class="container-fluid col-sm-6 align-self-center">
+            <img
+              src="./asset/hero-section.jpg"
+              alt=""
+              width="100%"
+              class="rounded-5"
+            />
+          </div>
+        </div>
+      </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffd700"
+          fill-opacity="1"
+          d="M0,128L30,138.7C60,149,120,171,180,186.7C240,203,300,213,360,202.7C420,192,480,160,540,160C600,160,660,192,720,213.3C780,235,840,245,900,218.7C960,192,1020,128,1080,90.7C1140,53,1200,43,1260,53.3C1320,64,1380,96,1410,112L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+
+      <!-- Facilities -->
+      <section>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide position-relative"
+        >
+          <h1
+            class="z-1 position-absolute pt-5 top-0 start-50 translate-middle-x text-white text-shadow"
+          >
+            Facilities
+          </h1>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./asset/paint.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Painting Class</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./asset/creative.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Cretive Class</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./asset/class.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Nice Class</h5>
+                <p>Lorem ipsum dolor sit amet consectetur..</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Price -->
+      <section>
+        <h1 class="text-center mt-5 py-5">Pricing</h1>
+        <div class="card-body px-5">
+          <div class="card-group gap-3">
+            <div class="card">
+              <img src="./asset/playgroup.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4>Playgroup</h4>
+                <h5>Rp.1,000,000/months</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./asset/pre-school.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4>Pre-School</h4>
+                <h5>Rp.1,500,000/months</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./asset/kindergaten.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4>Kindergaten</h4>
+                <h5>Rp.2,000,000/months</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffd700"
+            fill-opacity="1"
+            d="M0,192L18.5,197.3C36.9,203,74,213,111,218.7C147.7,224,185,224,222,208C258.5,192,295,160,332,160C369.2,160,406,192,443,213.3C480,235,517,245,554,240C590.8,235,628,213,665,186.7C701.5,160,738,128,775,133.3C812.3,139,849,181,886,213.3C923.1,245,960,267,997,266.7C1033.8,267,1071,245,1108,202.7C1144.6,160,1182,96,1218,80C1255.4,64,1292,96,1329,128C1366.2,160,1403,192,1422,208L1440,224L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"
+          ></path>
+        </svg>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="p-5 row"
+      style="
+        background-image: url(./asset/background.jpg);
+        background-size: cover;
+      "
+    >
+      <h1
+        class="text-center py-5 text-white fw-bold"
+        style="text-shadow: 0.3rem 0.3rem 0.5em black"
+      >
+        Contact
+      </h1>
+
+      <form
+        class="container-fluid py-5 col-sm-4 align-self-center"
+        style="background-color: whitesmoke; border-radius: 1rem"
+      >
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInputDisabled"
+            placeholder="name@example.com"
+            disabled
+          />
+          <label for="floatingInputDisabled">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextareaDisabled"
+            disabled
+          ></textarea>
+          <label for="floatingTextareaDisabled">Comments</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2Disabled"
+            style="height: 100px"
+            disabled
+          >
+Write message here..</textarea
+          >
+          <label for="floatingTextarea2Disabled">Message</label>
+        </div>
+
+        <button type="submit" class="btn btn-warning mt-1">Submit</button>
+      </form>
+    </footer>
 
     <!-- Bootstrap Script -->
     <script
